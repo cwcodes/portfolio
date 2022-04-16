@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
+    <title>Portfolio cwcodes</title>
+</head>
+<style>
+    @import url('http://fonts.cdnfonts.com/css/bahnschrift');
+
+    body{
+    margin: 50 auto;
+    font-family: 'Bahnschrift', sans-serif;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4D16AQEJNDAHp2C-qQ/profile-displaybackgroundimage-shrink_350_1400/0/1646048381025?e=1655337600&v=beta&t=RyGUOQhSRmZlPz7d1g_gu75stYV24qMtB7VdlaYSYXQ');
+    } 
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.925);
+        margin: 100px 500px 20px 500px;
+        padding: 30px 30px 0px 30px;
+    }
+
+    button{
+      background: #EE6668;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-family: 'Bahnschrift', sans-serif;
+      padding: 20px;
+      margin: 0px 100px 30px 100px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+      transition: all 250ms ease-in-out;
+    }
+
+    button:hover{
+    cursor: pointer;
+    background: #ae3a3c;
+    }
+
+    a{
+    color: #FFFFFF;
+    text-decoration: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+</style>
+<body>
+    <main>
+        <div>
+    <button class="mainztestet">
+        mainz testet
+    </button>
+    <button class="barsinmainz">
+        bars in mainz
+    </button>
+    <button class="shecodes">
+        SheCodes final
+    </button>
+    </main>
+    </div>
+    <footer>
+        coded by <em><a href="https://github.com/cwcodes" target="blank">cwcodes</a></em>
+    </footer>
+</body>
+<script>
+function goMainztestet() {
+    window.location.href='https://mainz-testet.vercel.app/';
+}
+
+function goBarsinmainz() {
+    window.location.href='https://barsinmainz.vercel.app/';
+}
+
+function goShecodes() {
+    window.location.href='https://maximilianklewer-jx55ysen3-cwcodes.vercel.app/';
+}
+
+    let firstButton = document.querySelector(".mainztestet");
+    firstButton.addEventListener("click", goMainztestet);
+
+    let secondButton = document.querySelector(".barsinmainz");
+    secondButton.addEventListener("click", goBarsinmainz);
+
+    let thirdButton = document.querySelector(".shecodes");
+    thirdButton.addEventListener("click", goShecodes);
+</script>
+</html>
