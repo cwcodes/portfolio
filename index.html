@@ -23,13 +23,18 @@
         border-radius: 20px;
         border: none;
         box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
-        background-color: rgba(255, 255, 255, 0.925);
+        background-color: rgba(255, 255, 255, 0.741);
         margin: 100px 500px 20px 500px;
         padding: 30px 30px 0px 30px;
     }
 
+    .container{
+        max-width: 600px;
+        margin: 100px auto;
+    }
+
     button{
-      background: #EE6668;
+        background: #EE6668;
       color: #FFFFFF;
       font-size: 22px;
       font-family: 'Bahnschrift', sans-serif;
@@ -38,7 +43,7 @@
       border: none;
       border-radius: 20px;
       box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
-      transition: all 200ms ease-in-out;
+      transition: all 250ms ease-in-out;
     }
 
     button:hover{
@@ -47,7 +52,7 @@
     }
 
     a{
-    color: #FFFFFF;
+        color: #FFFFFF;
     text-decoration: none;
     }
 
@@ -57,7 +62,7 @@
 </style>
 <body>
     <main>
-        <div>
+        <div class="container">
     <button class="mainztestet">
         mainz testet
     </button>
@@ -75,7 +80,7 @@
 </body>
 <script>
 function goMainztestet() {
-    window.location.href='https://mainz-testet.vercel.app/', target="blank";
+    window.location.href='https://mainz-testet.vercel.app/';
 }
 
 function goBarsinmainz() {
